@@ -15,5 +15,11 @@ public class Main {
         appleList.add(apple2);
 
         Printer.prettyPrintApple(appleList, new AppleLightWeightPredicate());
+
+        process(() -> System.out.println("give me money!!!"));
+
+    }
+    public static void process(Runnable r) {
+        r.run();
     }
 }
